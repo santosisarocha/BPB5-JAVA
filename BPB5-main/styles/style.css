@@ -1,0 +1,797 @@
+ /* CSS RESET */
+ 
+* {
+    padding: 0;
+    margin:0
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    height: 127px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+}
+
+#logo_container {
+    width:324px;
+    }
+
+.navbar_logo{
+    width:50%;
+    object-fit:cover;
+   
+}
+
+.navbar_text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6em;
+}
+
+.navbar_text{
+    position: relative; /* ou absolute, dependendo do seu layout */
+    right: 650px; /* Mova a figura 50 pixels para a direita */
+}
+
+
+.procurar{
+    position: relative; /* ou absolute, dependendo do seu layout */
+    right: 50px; /* Mova a figura 50 pixels para a direita */
+}
+
+.procurar{
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5;
+    text-decoration: none;
+    color: #000, 50%;
+    font-size: 1.6em;
+
+}
+
+.procurar{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 1); /* Cor de fundo do retângulo */
+    padding: 0px 10px; /* Espaçamento interno para o retângulo */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Cor da borda (vermelho) */
+    
+    border-radius: 5px; /* Bordas arredondadas para o retângulo */
+    text-decoration: none; /* Remova a decoração de link */
+    color: #000; /* Cor do texto */
+    margin-right: 10px; /* Espaçamento à direita entre os elementos */
+}
+
+.icone {
+    margin-right: 10px; /* Espaçamento à direita entre o ícone e o texto */
+}
+
+.navitem {
+    padding-right: 20px;
+    
+}
+
+a.navitem {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.hero{
+    position: flex;
+    display: inline-block;
+}
+
+.hero_banner{
+    width:100%; 
+    
+
+}
+.hero_banner_text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 2.0em;
+
+}
+
+.hero_banner_text{
+    position: absolute;
+    top: 50%; /* Alinha o texto verticalmente no centro */
+    left: 50%; /* Alinha o texto horizontalmente no centro */
+    transform: translate(-185%, -185%); /* Centraliza o texto com base no seu tamanho */
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo do texto com transparência */
+    padding: 10px; /* Espaçamento interno para o texto */
+    color: rgba(255, 255, 255); /* Cor do texto */
+    text-decoration: none; /* Remova a decoração de link */
+}
+
+.botao-learn-more {
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    background-color: #8391a000;
+    color: #fff;
+    padding: 20px 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave na propriedade 'transform' */
+}
+
+.botao-learn-more:active {
+    transform: scale(0.05); /* Aumenta o tamanho do botão em 10% quando o botão é pressionado */
+}
+
+.botao-find-my-scent {
+    position: absolute; /* Define o posicionamento absoluto para os botões */
+    top: 50%; /* Alinha os botões verticalmente no centro do contêiner */
+    left: 21%; /* Alinha os botões horizontalmente no centro do contêiner */
+    transform: translate(-50%, -50%); /* Centraliza os botões com base no seu tamanho */
+    background-color: #000; /* Cor de fundo para Learn More */
+    color: #fff; /* Cor do texto */
+    padding: 22px 43px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    margin: 5px; /* Espaçamento externo opcional entre os botões */
+    transition: transform 0.3s ease;
+}
+.botao-find-my-scent:active{
+    transform: scale(0.05); /* Aumenta o tamanho do botão em 10% quando o botão é pressionado */
+
+}
+#carossel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carossel_img{
+    width:100%;   
+
+}
+
+.produto1{
+    width: 250px;
+    position: absolute; /* Define o posicionamento absoluto para a imagem sobreposta */
+    top: 1125px; /* Alinha a imagem sobreposta ao topo do contêiner */
+    right: 140px; /* Alinha a imagem sobreposta à esquerda do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        
+}
+
+.produto1:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passa por cima dela */
+    z-index: 1; /* Define a ordem de empilhamento para garantir que a imagem sobreposta esteja na frente de outras */
+   
+}
+
+.produto2{
+    width: 212px;
+    position: absolute; /* Define o posicionamento absoluto para a imagem sobreposta */
+    top: 1116px; /* Alinha a imagem sobreposta ao topo do contêiner */
+    right: 450px; /* Alinha a imagem sobreposta à esquerda do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        
+}
+
+.produto2:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passa por cima dela */
+    z-index: 1; /* Define a ordem de empilhamento para garantir que a imagem sobreposta esteja na frente de outras */
+   
+}
+
+.produto3{
+    width: 230px;
+    position: absolute; 
+    top: 1090px; /* Alinha a imagem sobreposta ao topo do contêiner */
+    right: 750px; /* Alinha a imagem sobreposta à esquerda do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        
+}
+
+.produto3:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passa por cima dela */
+    z-index: 1; /* Define a ordem de empilhamento para garantir que a imagem sobreposta esteja na frente de outras */
+   
+}
+
+#products {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+    position: relative; 
+}
+
+.products_textprincipal {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 2.0em;
+    white-space: nowrap;
+    position: absolute; 
+    top: 50px; /* Ajuste conforme necessário para posicionar verticalmente */
+    left: 940px; /* Ajuste conforme necessário para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento no contêiner pai */
+}
+
+.products_textprincipal2 {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.0em;
+    white-space: nowrap;
+    position: absolute;
+    top: 100px;
+    left: 945px;
+    transform: translate(-50%, -50%);
+}
+
+
+.botao_see_more {
+    position: relative; /* Use posicionamento relativo */
+    top: 120px; /* Posicione o botão abaixo do texto */
+    right: -790px;
+    background-color: #000;
+    color: #fff;
+    padding: 22px 43px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.botao_see_more:active{
+    transform: scale(0.05); /* Aumenta o tamanho do botão em 10% quando o botão é pressionado */
+
+}
+
+
+
+.imagem1_retangulo {
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    position: relative; /* Use posicionamento relativo */
+    top: 350px; /* Posicione o botão abaixo do texto */
+    right: 60px;
+}
+
+.imagem1_retangulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products1{
+    width: 230px;
+    height: auto;
+    position: relative;  /*Use posicionamento relativo */
+    top: 0px; /* Posicione o botão abaixo do texto */
+    right: 0px;
+    transition: transform 0.3s ease;
+}
+.products1:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passar sobre ela */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+.textproducts1{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.em;
+
+}
+.textproducts2{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+.imagem2_retangulo {
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    position: relative; /* Use posicionamento relativo */
+    top: 350px; /* Posicione o botão abaixo do texto */
+    right: 200px;
+}
+
+.imagem2_retangulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products2{
+    width: 230px;
+    height: auto;
+    position: relative; /* Use posicionamento relativo */
+    top: 0px; /* Posicione o botão abaixo do texto */
+    right: 0px;
+    transition: transform 0.3s ease;
+}
+.products2:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passar sobre ela */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+
+.imagem3_retangulo {
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    position: relative;  /*Use posicionamento relativo */
+    top: 350px; /* Posicione o botão abaixo do texto */
+    right: 360px;
+}
+
+.imagem3_retangulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products3{
+    width: 190px;
+    height: auto;
+    position: relative; /* Use posicionamento relativo */
+    top: 0px; /* Posicione o botão abaixo do texto */
+    right: -45px;
+    transition: transform 0.3s ease;
+    
+}
+.products3:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passar sobre ela */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+.imagem1_retangulo:hover,
+.imagem2_retangulo:hover,
+.imagem3_retangulo:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passar sobre ela */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+.footer_container {
+    margin-top: 550px;    
+    background-color: #fff; /* Cor de fundo do rodapé */
+    color: #000; /* Cor do texto no rodapé */
+    padding: 15px 0; /* Espaçamento interno superior e inferior */
+}
+
+.logo_footer {
+    width: 350px;
+}
+
+.footer_text{
+    display: flex; /* Define o contêiner de texto como flexível para alinhar horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+   position: relative;
+    top: -100px; /* Ajuste conforme necessário para a posição vertical */
+    right: -700px;
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.privacy{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.footer_text a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-decoration: none; /* Remova o sublinhado dos links */
+    color: #000; /* Defina a cor do texto dos links */
+   
+}
+#pageproducts {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+    position: relative;
+}
+
+.products_text {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 2.0em;
+    white-space: nowrap;
+    /* position: absolute;*/
+    top: 200px; /* Ajuste conforme necessário para posicionar verticalmente no meio */
+    left: 240px; /* Ajuste conforme necessário para posicionar horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Centraliza o elemento no contêiner pai */
+}
+
+#home_product_grid.product_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas iguais */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para cada item dentro do grid */
+#home_product_grid.product_grid .product_item {
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno dos itens */
+    border: 2px solid #ccc; /* Borda com cor */
+    border-radius: 5px; /* Cantos arredondados */
+    text-align: center; /* Alinhar o texto ao centro */
+    font-family: 'Inter', sans-serif; /* Fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os links dentro dos itens */
+#home_product_grid.product_grid .product_item a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #007bff; /* Cor dos links */
+}
+
+/* Estilo para os links quando passar o mouse sobre eles */
+#home_product_grid.product_grid .product_item a:hover {
+    text-decoration: underline; /* Sublinhar os links ao passar o mouse */
+}
+
+
+
+
+.footer_container2 {
+    margin-top: 50px;    
+    background-color: #fff; /* Cor de fundo do rodapé */
+    color: #000; /* Cor do texto no rodapé */
+    padding: 15px 0; /* Espaçamento interno superior e inferior */
+}
+
+.logo_footer2 {
+    width: 350px;
+}
+
+.footer_text2{
+    display: flex; /* Define o contêiner de texto como flexível para alinhar horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    position: relative;
+    top: -100px; /* Ajuste conforme necessário para a posição vertical */
+    right: -700px;
+}
+.text2{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.privacy2{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.footer_text2 a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-decoration: none; /* Remova o sublinhado dos links */
+    color: #000; /* Defina a cor do texto dos links */
+   
+}
+#pagProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px; /* Reduzi o padding para evitar que os elementos se estendam demais */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura da tela */
+    width: 80%; /* Ajustei a largura do contêiner */
+    
+}
+
+.pagProducts_img {
+    right: 250px;
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+    top: 170px; /* Ajustei a posição vertical */
+}
+
+.pagproducts1 {
+    width: 250px; /* Ajustei a largura do elemento */
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+.pagtextproducts {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px; /* Defina o tamanho da fonte apropriado */
+}
+
+.pagProducts_text1 {
+    display: flex;
+    
+    position: relative;
+    top: -20px; /* Ajustei a posição vertical */
+    right: -600px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagProducts_preco {
+    display: flex;
+    
+    position: relative;
+    top: 50px; /* Ajustei a posição vertical */
+    right: 50px; /* Ajustei o deslocamento horizontal */
+    font-family: 'Inter', sans-serif;
+}
+
+.add {
+    position: absolute;
+    top: 60px; /* Ajustei a posição vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3181dd;
+    color: #fff;
+    padding: 20px 50px;
+    border: 1px solid #3181dd;
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: transform 0.3s ease;
+}
+
+.add:active {
+    transform: scale(0.1); /* Aumentei o tamanho do botão */
+}
+
+.pagProducts_descricao {
+    display: flex;    
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    overflow-wrap: break-word;
+    top: 500px; /* Ajustei a posição vertical */
+    left: 1000px;
+    margin-right: 350px;
+}
+.pagProducts_review {
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex container para ser uma coluna */
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    overflow-wrap: break-word;
+    top: 700px; /* Ajuste conforme necessário para a posição vertical */
+    left: 1000px; /* Ajuste conforme necessário para a posição horizontal */
+    margin-right: 350px;
+}
+
+.image_principal{
+    width:100%;
+    object-fit:cover;   
+
+}
+.sobre_nos_text{
+    display: flex;    
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    overflow-wrap: break-word;
+    top: 550px; /* Ajustei a posição vertical */
+    left: 50px;
+    margin-right: 50px; 
+
+
+}
+.image_segundo{
+    width:100%;
+    object-fit:cover;  
+    margin-top: 80px;
+    
+
+}
+#carinho{
+    display: flex;    
+    justify-content: center;
+    padding: 0 0px; /* Reduzi o padding para evitar que os elementos se estendam demais */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura da tela */
+    width: 80%; /* Ajustei a largura do contêiner */
+    margin-top: 10%;
+    
+}
+.image_carrinho{
+    margin-left: 20%;
+    width:10%;
+    object-fit:cover; 
+}
+.text_carrinho{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px; /* 0% */
+    letter-spacing: -0.3px;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.quantidade_carrinho{
+    
+    width: 20px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #FFF;
+    display: flex; /* Usar flex para alinhar o texto */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    margin-top: 5.3%;
+}
+
+.preco_carrinho{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px; /* 0% */
+    letter-spacing: -0.3px;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 10%;
+
+}
+
+.lixo_carrinho{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-top: 5%;
+    
+    margin-right: 10%;
+
+}
+.linha_vertical {   
+    width: 1295px; 
+    height: 1px;
+    background: #000;
+    margin-left: 11%;
+}
+.qtd_carrinho{
+    
+    width: 20px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #FFF;
+    text-align: center;
+    margin-top: 3.5%;
+    margin-left: 50%;
+    margin-right: 5%;
+    display: flex; /* Usar flex para alinhar o texto */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    text-align: center; /* Centralizar o texto horizontalmente */
+}
+.preco_total_carrinho{
+    width: 108.739px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62.584px; /* 312.921% */
+    letter-spacing: -0.3px;
+    margin-top: 2.5%;
+    
+    margin-right: 3.31%;
+
+}
+.continue{
+    width: 94px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 3%;
+    margin-left: 50% ;
+    width: 150px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #ACDFFA;
+    display: flex; /* Usar flex para alinhar o texto */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    transition: transform 0.3s ease; /* Adiciona uma transição na propriedade 'transform' */
+    cursor: pointer;
+}
+        
+
+.continue:hover {
+    transform: scale(0.9); /* Diminui o elemento em 10% quando hover */
+}
+
+
+.finish{
+    width: 56px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    width: 150px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #0A8BF4;
+    display: flex; /* Usar flex para alinhar o texto */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    margin-top: 3%;
+    margin-left: 5%;
+    transition: transform 0.3s ease; /* Adiciona uma transição na propriedade 'transform' */
+    cursor: pointer;
+
+}
+.finish:hover {
+    transform: scale(0.9); /* Diminui o elemento em 10% quando hover */
+}
+
