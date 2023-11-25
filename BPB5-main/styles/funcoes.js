@@ -2,7 +2,7 @@ export function carregaCard(listaProduto, gridProduto){
     listaProduto.forEach(produto => {
         const html = `
         <div class="product_card" id="${produto.codigoProduto}">
-        <a href="produto1.html">
+        <a href="produto1.html" onclick="returnId(${produto.codigoProduto})">
         <div class="product_grid" id="${produto.codigoProduto}">
         <div class="product_item">
         <img src="${produto.imagemProduto}" class="product_image">
@@ -15,14 +15,13 @@ export function carregaCard(listaProduto, gridProduto){
     })
 }
 
-export function pegarCodProduto(){
-    let itens = document.querySelectorAll("div.product_card")
-    console.log(itens)
-    itens.forEach(item => item.addEventListener('click',(evento)=>{
-        let prodID = evento.target.id
-        localStorage.setItem('prodId', prodID)
-    }))
-}
+// export function pegarCodProduto(){
+//     let itens = document.querySelectorAll("div.product_card")
+//     itens.forEach(item => item.addEventListener('click',(evento)=>{
+//         let prodID = evento.target.id
+//         localStorage.setItem('prodId', prodID)
+//     }))
+// }
 
 export function findProduto(listaProduto, id){
     let produto = listaProduto.find(produto => produto.codigoProduto == id)
@@ -34,7 +33,7 @@ export function carregaProduto(produto,selecaoProduto){
     <h2>${produto.descricao}</h2>
     </div>
     <div class="pagProducts_img">
-    <img class="pagproducts1" src="${produto.imagemProduto}>
+    <img class="pagproducts1" src="${produto.imagemProduto}">
     <div class="pagtextproducts">
     <h3>${produto.produto}</h3>
     <h3>${produto.descricao}</h3>
