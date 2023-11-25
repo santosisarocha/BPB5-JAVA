@@ -15,17 +15,21 @@ carregaProduto(produto1,selecaoProduto1)
 
 let botaoComprar = document.querySelector(".add")
 console.log(botaoComprar)
+newProduto = selecaoProduto1
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    const botaoComprar = document.querySelector('#add'); // Replace with the actual ID
+    const botaoComprar = document.querySelector('.add'); // Substitua pelo ID real
     const sacolaCompras = JSON.parse(localStorage.getItem('sacolasCompras')) || [];
-    console.log(botaoComprar)
 
-    botaoComprar.addEventListener('click', () => {
-        let quantidade = parseInt(document.querySelector("div.product_info input").value);
-        let newProduto = {...produto,quantidade};
-        alert("item adicionado no carrinho");
+    botaoComprar.addEventListener('click', function() {
+        alert("Item adicionado com sucesso");       
+
         sacolaCompras.push(newProduto);
         localStorage.setItem('sacolasCompras', JSON.stringify(sacolaCompras));
-        console.log(sacolaCompras);})}) 
+        console.log(sacolaCompras);
+    });
+});
+
+
+    
