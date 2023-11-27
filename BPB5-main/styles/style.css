@@ -434,11 +434,10 @@ a.navitem {
 }
 #pageproducts {
     height: 100px;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
     padding: 0 82px;
-    position: relative;
+    position: static;
 }
 
 .products_text {
@@ -446,8 +445,6 @@ a.navitem {
     text-decoration: none;
     color: #000;
     font-size: 2.0em;
-    white-space: nowrap;
-    /* position: absolute;*/
     top: 200px; /* Ajuste conforme necessário para posicionar verticalmente no meio */
     left: 240px; /* Ajuste conforme necessário para posicionar horizontalmente no meio */
     transform: translate(-50%, -50%); /* Centraliza o elemento no contêiner pai */
@@ -456,8 +453,8 @@ a.navitem {
 #home_product_grid.product_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define 3 colunas iguais */
-    gap: 20px; /* Espaçamento entre os elementos */
-    padding: 20px; /* Espaçamento interno */
+    gap: 10px; /* Espaçamento entre os elementos */
+    padding: 5px; /* Espaçamento interno */
 }
 
 /* Estilo para cada item dentro do grid */
@@ -482,8 +479,6 @@ a.navitem {
 #home_product_grid.product_grid .product_item a:hover {
     text-decoration: underline; /* Sublinhar os links ao passar o mouse */
 }
-
-
 
 
 .footer_container2 {
@@ -532,7 +527,7 @@ a.navitem {
 }
 
 .pagProducts_img {
-    right: 250px;
+    right: 150px;
     border: 2px solid rgba(0, 0, 0, 0.1); 
     padding: 10px;
     border-radius: 5px;
@@ -556,8 +551,7 @@ a.navitem {
 }
 
 .pagProducts_text1 {
-    display: flex;
-    
+    display: flex;    
     position: relative;
     top: -20px; /* Ajustei a posição vertical */
     right: -600px;
@@ -565,8 +559,7 @@ a.navitem {
 }
 
 .pagProducts_preco {
-    display: flex;
-    
+    display: flex;    
     position: relative;
     top: 50px; /* Ajustei a posição vertical */
     right: 50px; /* Ajustei o deslocamento horizontal */
@@ -634,7 +627,7 @@ a.navitem {
     
 
 }
-#carinho{
+.carinho, .container{
     display: flex;    
     justify-content: center;
     padding: 0 0px; /* Reduzi o padding para evitar que os elementos se estendam demais */

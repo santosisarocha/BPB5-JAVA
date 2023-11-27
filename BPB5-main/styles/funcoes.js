@@ -29,7 +29,9 @@ export function findProduto(listaProduto, id){
 }
 
 export function carregaProduto(produto,selecaoProduto){
-    let html = `<div class="pagProducts_text1">
+    let html = `
+    <div class="produtosProduto">
+    <div class="pagProducts_text1">
     <h2>${produto.descricao}</h2>
     </div>
     <div class="pagProducts_img">
@@ -42,6 +44,7 @@ export function carregaProduto(produto,selecaoProduto){
     </div>
     <div class="pagProducts_preco">
     <h3>RS ${produto.preco}</h3>
+    <input type="number" name="" id="inputQuantidade" value="1">
     <button class="add">ADD</button>    
     </div>
     <div class="pagProducts_descricao">
@@ -56,6 +59,7 @@ export function carregaProduto(produto,selecaoProduto){
     <h2>Review snapshot</h2>
     <h1>5.0</h1>
     <h3> ⭐ ⭐ ⭐ ⭐ ⭐</h3>
+    </div>
     </div>`
     selecaoProduto.innerHTML = html
 }

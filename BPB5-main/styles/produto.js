@@ -8,28 +8,24 @@ if(sacolaCompras == null){
     sacolaCompras = []
 }
 
-let produto1 = findProduto(catalogoProdutos,id)
+let produto = findProduto(catalogoProdutos,id)
 let selecaoProduto1 = document.querySelector("#pagProducts")
 
-carregaProduto(produto1,selecaoProduto1)
+carregaProduto(produto,selecaoProduto1)
 
-let botaoComprar = document.querySelector(".add")
+let botaoComprar = document.querySelector("button.add")
 console.log(botaoComprar)
-newProduto = selecaoProduto1
+/*newProduto = selecaoProduto1*/
 
-document.addEventListener('DOMContentLoaded', function() {
+botaoComprar.addEventListener('click', ()=> {
+    let quantidade = parseInt(document.querySelector("#inputQuantidade").value)
+    //produto.quantidade = quantidade
+    //console.log(quantidade)
+    //sacolaCompras.push(produto)
+    let newProduto = {...produto,quantidade}
+    alert("item adicionado ao carrinho")
+    sacolaCompras.push(newProduto)
+    localStorage.setItem('sacolaCompras',JSON.stringify(sacolaCompras))
+    console.log(sacolaCompras)
+})
 
-    const botaoComprar = document.querySelector('.add'); // Substitua pelo ID real
-    const sacolaCompras = JSON.parse(localStorage.getItem('sacolasCompras')) || [];
-
-    botaoComprar.addEventListener('click', function() {
-        alert("Item adicionado com sucesso");       
-
-        sacolaCompras.push(newProduto);
-        localStorage.setItem('sacolasCompras', JSON.stringify(sacolaCompras));
-        console.log(sacolaCompras);
-    });
-});
-
-
-    
