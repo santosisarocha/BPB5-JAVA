@@ -450,35 +450,37 @@ a.navitem {
     transform: translate(-50%, -50%); /* Centraliza o elemento no contêiner pai */
 }
 
-#home_product_grid.product_grid {
+/* Estilizando o grid de produtos */
+#produto .product_card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas iguais */
-    gap: 10px; /* Espaçamento entre os elementos */
-    padding: 5px; /* Espaçamento interno */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 5px;
 }
 
-/* Estilo para cada item dentro do grid */
-#home_product_grid.product_grid .product_item {
-    background-color: #f0f0f0; /* Cor de fundo */
-    padding: 30px; /* Espaçamento interno dos itens */
-    border: 2px solid #ccc; /* Borda com cor */
-    border-radius: 5px; /* Cantos arredondados */
-    text-align: center; /* Alinhar o texto ao centro */
-    font-family: 'Inter', sans-serif; /* Fonte */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
+/* Estilizando cada item dentro do grid */
+#produto .product_card .product_item {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333;
 }
 
-/* Estilo para os links dentro dos itens */
-#home_product_grid.product_grid .product_item a {
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: #007bff; /* Cor dos links */
+/* Estilizando os links dentro dos itens */
+#produto .product_card .product_item a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-/* Estilo para os links quando passar o mouse sobre eles */
-#home_product_grid.product_grid .product_item a:hover {
-    text-decoration: underline; /* Sublinhar os links ao passar o mouse */
+/* Estilizando os links quando passar o mouse sobre eles */
+#produto .product_card .product_item a:hover {
+    text-decoration: underline;
 }
+
 
 
 .footer_container2 {
@@ -533,7 +535,7 @@ a.navitem {
     border-radius: 5px;
     height: auto;
     position: relative;
-    top: 170px; /* Ajustei a posição vertical */
+    top: 270px; /* Ajustei a posição vertical */
 }
 
 .pagproducts1 {
@@ -553,23 +555,33 @@ a.navitem {
 .pagProducts_text1 {
     display: flex;    
     position: relative;
-    top: -20px; /* Ajustei a posição vertical */
-    right: -600px;
+    top: 250px; /* Ajustei a posição vertical */
+    right: -400px;
     font-family: 'Inter', sans-serif;
 }
 
 .pagProducts_preco {
+    position: absolute;
     display: flex;    
-    position: relative;
-    top: 50px; /* Ajustei a posição vertical */
-    right: 50px; /* Ajustei o deslocamento horizontal */
+    
+    top: 650px; /* Ajustei a posição vertical */
+    right: 800px; /* Ajustei o deslocamento horizontal */
     font-family: 'Inter', sans-serif;
+}
+#inputQuantidade {
+    position: absolute;
+    width: 50px;
+    top: 5px; /* Ajustei a posição vertical */
+    left: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .add {
     position: absolute;
     top: 60px; /* Ajustei a posição vertical */
-    left: 50%;
+    left: 400px;
     transform: translateX(-50%);
     background-color: #3181dd;
     color: #fff;
@@ -703,7 +715,7 @@ a.navitem {
     background: #FFF;
     text-align: center;
     margin-top: 3.5%;
-    margin-left: 50%;
+    margin-left: 46.5%;
     margin-right: 5%;
     display: flex; /* Usar flex para alinhar o texto */
     justify-content: center; /* Centralizar horizontalmente */
@@ -711,17 +723,14 @@ a.navitem {
     text-align: center; /* Centralizar o texto horizontalmente */
 }
 .preco_total_carrinho{
-    width: 108.739px;
     color: #000;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 62.584px; /* 312.921% */
-    letter-spacing: -0.3px;
-    margin-top: 2.5%;
-    
-    margin-right: 3.31%;
+    font-weight: 400;    
+    margin-top: -5%;    
+    margin-left: 50.5%;
+    margin-right: 5.31%;
 
 }
 .continue{
@@ -769,9 +778,14 @@ a.navitem {
     justify-content: center; /* Centralizar horizontalmente */
     align-items: center; /* Centralizar verticalmente */
     text-align: center; /* Centralizar o texto horizontalmente */
-    margin-top: 3%;
-    margin-left: 5%;
+    margin-top: -3%;
+    margin-left: 30%;
     cursor: pointer;
 
 }
 
+.cart_container{
+    margin-top: 3%;
+    margin-left: 40% ;
+
+}
