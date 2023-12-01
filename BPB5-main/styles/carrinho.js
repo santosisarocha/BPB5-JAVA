@@ -35,7 +35,7 @@ sacolaCompras.forEach(item => {
     }
     ))
     
-    let finalizar = document.querySelectorAll("a.finish")
+    let finalizar = document.querySelectorAll(".finish")
     finalizar.forEach(botao => botao.addEventListener('click', ()=> {
         
         let endereco = {
@@ -45,7 +45,7 @@ sacolaCompras.forEach(item => {
             cidade: document.querySelector('input#cidade').value,
             estado: document.querySelector('input#estado').value
         }
-    
+        
        let codPedido = pedidos.length
         if(pedidos == null || pedidos == 0){
             codPedido = 1
@@ -57,8 +57,8 @@ sacolaCompras.forEach(item => {
             id: codPedido
         }// crio um objeto que guarda uma lista de produtos e o endereco do comprador
         pedidos.push(pedido) // coloco o pedido na lista de pedidos
-        localStorage.setItem('pedidos',JSON.stringify(pedidos))
-       
+        localStorage.setItem('pedidos',JSON.stringify(pedidos))     
+        console.log(pedido)  
     
     
     }))
