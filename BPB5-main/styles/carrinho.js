@@ -4,7 +4,8 @@ let pedidos = JSON.parse(localStorage.getItem("pedidos"))
 if (pedidos == null){
     pedidos = []
 }
-
+console.log(pedidos)
+console.log(sacolaCompras)
 let cartList = document.querySelector('ul.carinho')
 
 sacolaCompras.forEach(item => {

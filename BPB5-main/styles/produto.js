@@ -3,7 +3,9 @@
 let id = localStorage.getItem('prodId')
 console.log(id);
 
-let sacolaCompras = JSON.parse(localStorage.getItem("sacolasCompras"))
+let sacolaCompras = JSON.parse(localStorage.getItem("sacolaCompras"))
+console.log(sacolaCompras)
+
 if(sacolaCompras == null){
     sacolaCompras = []
 }
@@ -28,4 +30,5 @@ botaoComprar.addEventListener('click', ()=> {
     localStorage.setItem('sacolaCompras',JSON.stringify(sacolaCompras))
     console.log(sacolaCompras)
 })
+
 
