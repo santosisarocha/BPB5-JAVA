@@ -432,12 +432,14 @@ a.navitem {
     color: #000; /* Defina a cor do texto dos links */
    
 }
-#pageproducts {
-    height: 100px;
-    display: flex;    
+#pagproducts {
+    height: 500px;
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr); 
     align-items: center;
     padding: 0 82px;
     position: static;
+    border-radius: 5px;
 }
 
 .products_text {
@@ -451,7 +453,7 @@ a.navitem {
 }
 
 /* Estilizando o grid de produtos */
-#produto .product_card {
+#pagproducts .product_card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
