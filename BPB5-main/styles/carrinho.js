@@ -62,8 +62,7 @@ sacolaCompras.forEach(item => {
         pedidos.push(pedido) // coloco o pedido na lista de pedidos
         localStorage.setItem('pedidos',JSON.stringify(pedidos))     
         console.log(pedido)  
-        alert("comprado")
-    
+        alert("comprado")    
     
     }))
     

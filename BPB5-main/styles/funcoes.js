@@ -43,7 +43,7 @@ export function carregaProduto(produto,selecaoProduto){
     </div>
     </div>
     <div class="pagProducts_preco">
-    <h3>RS ${produto.preco}</h3>
+    <h3>R$ ${produto.preco}</h3>
     <input type="number" name="" id="inputQuantidade" value="1">
     <button class="add">ADD</button>    
     </div>
